@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Dunkin' Donuts Philippines</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .hero-section {
+            background-color: #ff6600;
+            color: white;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .product-item {
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .header-image {
+            width: 100%;
+            height: 300px; /* Adjust height as needed */
+            background-image: url('https://images.gmanews.tv/webpics/2020/07/70230720_1375529372596682_5077775783489961984_o_2020_07_14_13_32_13.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header-overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-text {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="MainPage.html">Dunkin' Donuts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutPage.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="ProductsPage.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="ContactsPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section id="hero-section" class="header-image">
+        <div class="header-overlay">
+            <div class="header-text">
+                <h1>Discover Our Delicious Range</h1>
+                <p>Explore our delectable selection of donuts, coffee, sandwiches, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products-section" class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 product-item">
+                <div class="card">
+                    <img src="C:\Users\allen\OneDrive\Documents\Finals Web Design\images\donuts.jpg" class="card-img-top" alt="Donut">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Donuts</h5>
+                        <p class="card-text">Our classic donuts come in a variety of flavors and are perfect for any time of the day.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-item">
+                <div class="card">
+                    <img src="https://pbs.twimg.com/media/CyQdyniXcAEN5Zq.jpg" class="card-img-top" alt="Coffee">
+                    <div class="card-body">
+                        <h5 class="card-title">Freshly Brewed Coffee</h5>
+                        <p class="card-text">Enjoy a cup of our freshly brewed coffee, available in hot and iced varieties.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-item">
+                <div class="card">
+                    <img src="C:\Users\allen\OneDrive\Documents\Finals Web Design\images\sandwich.png" class="card-img-top" alt="Sandwich">
+                    <div class="card-body">
+                        <h5 class="card-title">Delicious Sandwiches</h5>
+                        <p class="card-text">Try our range of delicious sandwiches, perfect for breakfast or a quick snack.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 product-item">
+                <div class="card">
+                    <img src="C:\Users\allen\OneDrive\Documents\Finals Web Design\images\bakery.jpg" class="card-img-top" alt="Bakery">
+                    <div class="card-body">
+                        <h5 class="card-title">Bakery Items</h5>
+                        <p class="card-text">From muffins to croissants, our bakery items are baked fresh daily.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-item">
+                <div class="card">
+                    <img src="C:\Users\allen\OneDrive\Documents\Finals Web Design\images\coolata.jpg" class="card-img-top" alt="Coolatta">
+                    <div class="card-body">
+                        <h5 class="card-title">Coolatta</h5>
+                        <p class="card-text">Beat the heat with our refreshing Coolatta drinks, available in multiple flavors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-item">
+                <div class="card">
+                    <img src="https://pbs.twimg.com/media/F1CDBFXaEAA1ck2.jpg:large" class="card-img-top" alt="Espresso">
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso Drinks</h5>
+                        <p class="card-text">Our espresso drinks are crafted to perfection, offering a rich and bold flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact-section" class="footer text-center">
+        <div class="container">
+            <span>&copy; 2024 Dunkin' Donuts Philippines. All rights reserved. | For educational purposes only.</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script>
+        // Smooth scrolling using jQuery easing
+        $('a.nav-link').on('click', function(event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    </script>
+    <!-- ScrollReveal Animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Initialize ScrollReveal with options
+        ScrollReveal().reveal('.product-item', {
+            delay: 300,
+            reset: false  // Prevent elements from resetting to their original state
+        });
+    </script>
+</body>
+</html>

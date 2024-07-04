@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunkin' Donuts Philippines - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .hero-section {
+            background-color: #ff6600;
+            color: white;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            position: relative; /* Ensures proper stacking context */
+        }
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .features {
+            margin-top: 50px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="MainPage.html">Dunkin' Donuts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutPage.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="ProductsPage.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="ContactsPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <img src="C:\Users\allen\OneDrive\Documents\Finals Web Design\images\dunkin main.png" alt="Dunkin' Donuts Main Image" width="800" height="400">
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="container features">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Quality Ingredients</h2>
+                <p>We use the finest ingredients to ensure our products are always fresh and delicious.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Variety of Flavors</h2>
+                <p>From classic to unique, our donuts come in a wide variety of flavors to suit every taste.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Community Focused</h2>
+                <p>We are committed to supporting our local community through various initiatives.</p>
+            </div>
+        </div>
+    </section>
+
+   
+
+    
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <span>&copy; 2024 Dunkin' Donuts Philippines. All rights reserved. | For educational purposes only.</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            // Scroll Reveal animation initialization
+            ScrollReveal().reveal('.hero-section', {
+                duration: 1000,
+                delay: 200,
+                origin: 'bottom',
+                distance: '50px',
+                easing: 'ease-out',
+                reset: true
+            });
+
+            ScrollReveal().reveal('.features .col-md-4', {
+                duration: 1000,
+                delay: 200,
+                origin: 'bottom',
+                distance: '50px',
+                easing: 'ease-out',
+                reset: true
+            });
+        });
+    </script>
+</body>
+</html>

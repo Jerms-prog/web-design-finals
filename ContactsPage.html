@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dunkin' Donuts Philippines</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .hero-section {
+            background-image: url('https://www.worldcoffeeportal.com/getattachment/7d6ed8f4-38eb-4042-819b-190326ca3199/Dunkin%E2%80%99-reaches-800-stores-in-the-Philippines.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hero-section h1 {
+            font-size: 3rem; /* Adjust font size as needed */
+            margin-bottom: 20px; /* Add spacing below heading */
+        }
+        .hero-section p {
+            font-size: 1.5rem; /* Adjust font size as needed */
+            margin-bottom: 20px; /* Add spacing below paragraph */
+        }
+        .contact-content {
+            margin-top: 50px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="HomePage.html">Dunkin' Donuts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutPage.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="ProductsPage.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="ContactsPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="container contact-content">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions, comments, or feedback, please feel free to reach out to us using the form below.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 123 Dunkin' Donuts Street, Manila, Philippines</p>
+                <p><strong>Phone:</strong> +63 2 123 4567</p>
+                <p><strong>Email:</strong> info@dunkindonuts.ph</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <span>&copy; 2024 Dunkin' Donuts Philippines. All rights reserved. | For educational purposes only.</span>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Validation -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Perform form validation here, for example:
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Form submitted successfully!');
+                // Here you could send the form data to a server using fetch or XMLHttpRequest
+                // Example: fetch('submit.php', { method: 'POST', body: new FormData(document.getElementById('contactForm')) });
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
